@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 
 function Cube({ size, top, left, right, duration, color }) {
   const half = size / 2;

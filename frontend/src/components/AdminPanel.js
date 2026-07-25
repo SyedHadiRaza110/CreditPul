@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 function AdminPanel() {
   const [users, setUsers] = useState([]);
