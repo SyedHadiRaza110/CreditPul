@@ -64,7 +64,7 @@ const FormPage = () => {
       };
 
       const token = localStorage.getItem("token");
-      const response = await axios.post("http://localhost:5000/predict", payload, {
+      const response = await axios.post("https://creditpul-production.up.railway.app/predict", payload, {
         headers: { Authorization: `Bearer ${token}` }
       });
       navigate("/result", { state: { ...payload, result: response.data } });

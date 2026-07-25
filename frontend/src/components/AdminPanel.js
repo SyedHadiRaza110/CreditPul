@@ -9,12 +9,12 @@ function AdminPanel() {
     const token = localStorage.getItem("token");
     const headers = { Authorization: `Bearer ${token}` };
 
-    fetch("http://localhost:5000/admin/users", { headers })
+    fetch("https://creditpul-production.up.railway.app/admin/users", { headers })
       .then((res) => res.json())
       .then(setUsers)
       .catch(() => setError("Failed to load users"));
 
-    fetch("http://localhost:5000/admin/scores", { headers })
+    fetch("https://creditpul-production.up.railway.app/admin/scores", { headers })
       .then((res) => res.json())
       .then(setScores)
       .catch(() => setError("Failed to load scores"));

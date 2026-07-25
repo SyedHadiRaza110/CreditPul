@@ -10,7 +10,7 @@ function Dashboard() {
 
   useEffect(() => {
     const token = localStorage.getItem("token");
-    fetch("http://localhost:5000/history", {
+    fetch("https://creditpul-production.up.railway.app/history", {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then((res) => res.json())
