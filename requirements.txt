@@ -1,0 +1,54 @@
+﻿# CreditPul 🌉
+
+**Bridging Pakistan'''s unbanked population to formal credit — one alternative data point at a time.**
+
+Built for the Alibaba Cloud AI Hackathon 2026 (Bano Qabil / Alkhidmat Foundation) — Financial Inclusion track.
+
+## The Problem
+
+Millions of people in Pakistan have no bank account and no credit history. Traditional lenders reject them outright — not because they'''re not creditworthy, but because there'''s no data to prove it.
+
+## The Solution
+
+CreditPul generates a micro-credit score using data people already generate every day:
+
+- Mobile recharge patterns
+- Utility bill payment history
+- Mobile wallet transaction volume (Easypaisa/JazzCash-style)
+- Monthly transaction frequency
+- Employment type and income
+- Existing debt and residence stability
+
+A trained Random Forest model turns this into a **Low / Medium / High** credit score, paired with a recommended loan limit and interest rate — giving lenders a starting point and giving unbanked individuals a path into the formal financial system.
+
+## Features
+
+- Multi-step guided credit assessment form
+- ML-based scoring (scikit-learn Random Forest)
+- Visual score gauge + explanation
+- Loan limit & interest rate recommendation
+- Downloadable PDF score certificate
+- Score history & trend tracking per user
+- Admin panel (all users, all scores)
+- Bilingual — English & Urdu
+- JWT-based authentication
+
+## Tech Stack
+
+**Frontend:** React, React Router, Recharts, Axios
+**Backend:** Flask, Flask-CORS, PyJWT
+**Database:** MySQL
+**ML:** scikit-learn, pandas, joblib
+
+## Running Locally
+  @'
+flask
+flask-cors
+joblib
+numpy
+scikit-learn
+pandas
+pyjwt
+pymysql
+werkzeug
+python-dotenv
