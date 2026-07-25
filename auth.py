@@ -13,10 +13,11 @@ auth_bp = Blueprint('auth', __name__)
 SECRET_KEY = os.environ.get("JWT_SECRET", "fallback_dev_secret")
 
 DB_CONFIG = {
-    "host": "localhost",
-    "user": "root",
+    "host": os.environ.get("DB_HOST", "localhost"),
+    "port": int(os.environ.get("DB_PORT", "3306")),
+    "user": os.environ.get("DB_USER", "root"),
     "password": os.environ.get("DB_PASSWORD", ""),
-    "database": "creditpul"
+    "database": os.environ.get("DB_NAME", "creditpul")
 }
 
 def get_db():

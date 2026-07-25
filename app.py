@@ -3,6 +3,7 @@ from flask_cors import CORS
 import joblib
 import numpy as np
 import json
+import os
 
 from auth import auth_bp, get_db, token_required
 from history import history_bp
@@ -84,5 +85,11 @@ def predict():
     })
 
 
+@app.route("/", methods=["GET"])
+def health():
+    return jsonify({"status": "CreditPul backend running"})
+
+
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
