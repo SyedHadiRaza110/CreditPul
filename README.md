@@ -148,17 +148,6 @@ The application uses:
 
 ---
 
-## 📸 Screenshots
-
-Add screenshots here after deployment.
-
-Example:
-
-* Home Page
-* Login
-* Signup
-* Dashboard
-
 ---
 
 ## 🌐 Live Demo
