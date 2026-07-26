@@ -166,7 +166,7 @@ Example:
 Replace with your deployed URL.
 
 ```text
-https://your-project-url.com
+https://credit-pul.vercel.app
 ```
 
 ---
