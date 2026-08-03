@@ -152,8 +152,6 @@ The application uses:
 
 ## 🌐 Live Demo
 
-Replace with your deployed URL.
-
 ```text
 https://credit-pul.vercel.app
 ```
